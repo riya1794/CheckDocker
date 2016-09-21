@@ -1,4 +1,4 @@
-FROM tagplus5/php7-apache
+FROM smebberson/alpine-apache
 
 RUN mkdir /var/www/html/CheckDocker 
 RUN cd /var/www/html 
