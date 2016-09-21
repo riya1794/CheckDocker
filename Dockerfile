@@ -1,9 +1,5 @@
-FROM smebberson/alpine-apache
+FROM docker.infoedge.com:5000/naukrigulf/apache-php
 
-RUN echo "mkdir /var/www/html/CheckDocker"
-RUN echo "cd /var/www/html/"
-RUN echo "git clone https://github.com/riya1794/CheckDocker.git"
-RUN echo "xdg-open http://localhost/CheckDocker/index.html"
-
-EXPOSE 80 443
-
+RUN mkdir /var/www/html
+RUN cd /var/www/html/
+RUN git clone https://github.com/riya1794/CheckDocker.git
